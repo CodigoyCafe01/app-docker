@@ -1,0 +1,17 @@
+services:
+  codigo-cafe:
+    container_name: codigo-cafe
+    image: codigo-cafe:latest
+    environment:
+      - TZ=America/Guayaquil
+
+    ports:
+      - 8080:8080
+
+    networks:
+      - net_codigo_cafe
+
+networks:
+  default:
+    name: net_codigo_cafe
+    external: true  
