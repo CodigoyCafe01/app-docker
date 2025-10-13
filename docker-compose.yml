@@ -12,6 +12,5 @@ services:
       - net_codigo_cafe
 
 networks:
-  default:
-    name: net_codigo_cafe
-    external: true  
+  net_codigo_cafe:
+    external: true
