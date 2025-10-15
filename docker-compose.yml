@@ -7,7 +7,7 @@ services:
       - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
 
     ports:
-      - 8180:8180
+      - 8380:8380
 
     networks:
       - net_codigo_cafe
