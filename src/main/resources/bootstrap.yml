@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: app-docker
+  profiles:
+    active: dev
+    #active: qa
+    #active: prod
+  cloud:
+    config:
+      #uri: ${SPRING_CLOUD_CONFIG_URI:http://localhost:8888}
+      uri: http://localhost:8888
+    compatibility-verifier:
+      enabled: false

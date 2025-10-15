@@ -4,6 +4,7 @@ services:
     image: codigo-cafe:latest
     environment:
       - TZ=America/Guayaquil
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
 
     ports:
       - 8080:8080
